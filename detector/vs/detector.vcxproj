@@ -93,7 +93,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:/repos/openCV/3.x/modules/ocl/include;D:/repos/openCV/3.x/modules/gpu/include;D:/repos/openCV/3.x/modules/videostab/include;D:/repos/openCV/3.x/modules/stitching/include;D:/repos/openCV/3.x/modules/contrib/include;D:/repos/openCV/3.x/modules/legacy/include;D:/repos/openCV/3.x/modules/calib3d/include;D:/repos/openCV/3.x/modules/features2d/include;D:/repos/openCV/3.x/modules/nonfree/include;D:/repos/openCV/3.x/modules/photo/include;D:/repos/openCV/3.x/modules/objdetect/include;D:/repos/openCV/3.x/modules/video/include;D:/repos/openCV/3.x/modules/ml/include;D:/repos/openCV/3.x/modules/highgui/include;D:/repos/openCV/3.x/modules/imgproc/include;D:/repos/openCV/3.x/modules/flann/include;D:/repos/openCV/3.x/modules/core/include;D:/repos/openCV/3.x/include;D:/repos/openCV/3.x/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(OPENCV_ROOT)/modules/ocl/include;$(OPENCV_ROOT)/modules/gpu/include;$(OPENCV_ROOT)/modules/videostab/include;$(OPENCV_ROOT)/modules/stitching/include;$(OPENCV_ROOT)/modules/contrib/include;$(OPENCV_ROOT)/modules/legacy/include;$(OPENCV_ROOT)/modules/calib3d/include;$(OPENCV_ROOT)/modules/features2d/include;$(OPENCV_ROOT)/modules/nonfree/include;$(OPENCV_ROOT)/modules/photo/include;$(OPENCV_ROOT)/modules/objdetect/include;$(OPENCV_ROOT)/modules/video/include;$(OPENCV_ROOT)/modules/ml/include;$(OPENCV_ROOT)/modules/highgui/include;$(OPENCV_ROOT)/modules/imgproc/include;$(OPENCV_ROOT)/modules/flann/include;$(OPENCV_ROOT)/modules/core/include;$(OPENCV_ROOT)/include;$(OPENCV_ROOT)/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -139,10 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="detector_descriptor_evaluation.cpp">
+    <ClCompile Include="..\detector_descriptor_evaluation.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="sift_detector.cpp" />
+    <ClCompile Include="..\sift_detector.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

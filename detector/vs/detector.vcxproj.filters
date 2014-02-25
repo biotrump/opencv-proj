@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="detector_descriptor_evaluation.cpp">
+    <ClCompile Include="..\sift_detector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sift_detector.cpp">
+    <ClCompile Include="..\detector_descriptor_evaluation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
