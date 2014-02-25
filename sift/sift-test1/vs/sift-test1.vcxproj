@@ -108,7 +108,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(OPENCV_ROOT)\build\lib\Debug;$(OPENCV_ROOT)\build\3rdparty\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OPENCV_ROOT)\build-3.0.x\lib\Debug;$(OPENCV_ROOT)\build-3.0.x\3rdparty\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opencv_core300d.lib;opencv_imgproc300d.lib;opencv_highgui300d.lib;opencv_ml300d.lib;opencv_video300d.lib;opencv_features2d300d.lib;opencv_calib3d300d.lib;opencv_objdetect300d.lib;opencv_contrib300d.lib;opencv_legacy300d.lib;opencv_flann300d.lib;zlibd.lib;libjpegd.lib;IlmImfd.lib;libjasperd.lib;libpngd.lib;libtiffd.lib;comctl32.lib;libwebpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
     </Link>
