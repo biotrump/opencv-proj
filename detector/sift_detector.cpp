@@ -77,7 +77,7 @@ int main( int argc, char** argv ) {
     // check http://docs.opencv.org/doc/tutorials/features2d/table_of_content_features2d/table_of_content_features2d.html
     // for OpenCV general detection/matching framework details
 
-    if( argc != 2 ) {
+    if( argc != 3 ) {
         help(argv);
         return -1;
     }
